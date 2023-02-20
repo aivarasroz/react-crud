@@ -5,15 +5,15 @@ const api = axios.create({
   timeout: 5000,
   headers: {
     'Content-type': 'application/json',
-    'Accept': 'application/json',
+    Accept: 'application/json',
   },
 });
 
 
 const fetchNba = async () => {
-  const response = await api.get<TeamModel>('./Nba');
+  const response = await api.get<TeamModel[]>('./teams');
 
-  return
+  return response.data
 };
 
 const ApiService = {
