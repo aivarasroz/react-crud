@@ -10,14 +10,14 @@ const api = axios.create({
 });
 
 
-const fetchNba = async () => {
-  const response = await api.get<TeamModel[]>('./teams');
+const fetchTeams = async () => {
+  const response = await api.get<TeamModel[]>('/Teams');
 
   return response.data
 };
 
 const ApiService = {
-  fetchNba,
+  fetchTeams,
 
 };
 

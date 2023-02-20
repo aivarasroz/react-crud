@@ -1,184 +1,172 @@
 {
-  "houses": [
+  "Teams": [
     {
       "id": "1",
-      "title": "Domek na drzewie wśród zwierząt",
-      "location": {
-        "country": "Poland",
-        "city": "Wychodne"
+      "title": "Chicago Bulls",
+      "RosterMvps": {
+        "starting": "DeRozan",
+        "bench": "ball"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/3a5a705d-af79-4ae3-8997-de37198b014b.jpg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/de62f2d3-5901-46b6-8e51-ba39a0582122.jpg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/8920865b-d2e0-4157-91e1-ba5081705d3f.jpg?im_w=1440"
+        "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Chicago_Bulls_logo.svg/1200px-Chicago_Bulls_logo.svg.png",
+        "https://lh3.googleusercontent.com/9-ToKlf7j2LxD79jbLpaoNViZZZdih4IFwcDCUKm9A4H9ZFecIs5RzxPWYDMmdWIZOKnWy0m7iVcJg=w1440-ns-nd-rj",
+        "https://cdn.vox-cdn.com/thumbor/JaJOGhUuJ9egSQsaad5B563xfOk=/0x0:3000x2000/1200x800/filters:focal(1260x760:1740x1240)/cdn.vox-cdn.com/uploads/chorus_image/image/65356129/tyler_parker_5_guys_bulls_alyceatinoyan.0.jpg"
       ],
-      "price": "32€",
-      "rating": 4.79
+      "titles": 6
     },
     {
       "id": "2",
-      "title": "Trobelė",
-      "location": {
-        "country": "Latvija",
-        "city": "Sēja"
+      "title": "Milwaukee Bucks",
+      "RosterMvps": {
+        "starting": "Giannis",
+        "bench": "Middleton"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/8dec2f7c-1c3e-402e-baea-4fd72af59621.jpg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/1c1c4008-d617-4e9f-b5e3-aa38bc8c5c9a.jpg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-43105686/original/b87b8ba8-d3d8-4567-8aa0-ce2a8e8a0dea.jpeg?im_w=1440"
+        "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Milwaukee_Bucks_logo.svg/1200px-Milwaukee_Bucks_logo.svg.png",
+        "https://cdn.vox-cdn.com/thumbor/VTM9n0lYSHMOHT9EQKH4Qkvv11Q=/0x0:3211x2614/1200x800/filters:focal(1350x1051:1862x1563)/cdn.vox-cdn.com/uploads/chorus_image/image/71942320/usa_today_19925885.0.jpg",
+        "https://www.wearegreenbay.com/wp-content/uploads/sites/70/2022/07/Milwaukee-Bucks-Logo.png?w=1920&h=1080&crop=1"
       ],
-      "price": "137€",
-      "rating": 4.97
+      "titles": 1
     },
     {
       "id": "3",
-      "title": "Gražus kaimiškas medinis rąstų namas Skriveri",
-      "location": {
-        "country": "Latvija",
-        "city": "Skrīveri"
+      "title": "LA Lakers",
+      "RosterMvps": {
+        "starting": "LeBron",
+        "bench": "Davis"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-38998240/original/f48a24c7-53d5-4e65-a041-08f1742096d0.jpeg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/fd94effa-da96-4b2d-97ee-39bab24ad470.jpg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/14cf87f4-cb04-49a1-b733-a43edfcff1c7.jpg?im_w=1440"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/800px-Los_Angeles_Lakers_logo.svg.png",
+        "https://cdn.nba.com/teams/uploads/sites/1610612747/2023/02/GettyImages-1461890853-02-02-23.jpg",
+        "https://s7d2.scene7.com/is/image/TWCNews/2022-10-27-lakers-la_10272022"
       ],
-      "price": "66€",
-      "rating": 4.62
+      "titles": 8
     },
     {
       "id": "4",
-      "title": "Virš Ąžuolų - Forest SPA",
-      "location": {
-        "country": "Lietuva",
-        "city": "Paplatelės"
+      "title": "Brooklyn Nets",
+      "RosterMvps": {
+        "starting": "Durant",
+        "bench": "Irving"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-49434096/original/3fcc350c-ac5f-4464-b757-4f43ef33c89f.jpeg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-49434096/original/97836fa1-c200-4899-a9d8-a1d1b013f15c.jpeg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-49434096/original/551bca7c-e035-45a7-98fe-a09108083c93.jpeg?im_w=1440"
+       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/1200px-Brooklyn_Nets_newlogo.svg.png",
+       "https://i.guim.co.uk/img/media/033ce0beb6cb5135cdf2c3fa1c7b56f0ecbf8df6/0_282_4493_2698/master/4493.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=97ce02135eb128f16053460b0498e287",
+       "https://imageio.forbes.com/specials-images/imageserve/63bb134c006dd2113dc4756b/Nets-Bulls-Basketball/960x0.jpg?format=jpg&width=960"
       ],
-      "price": "92€",
-      "rating": 5.0
+      "titles": 0
     },
     {
       "id": "5",
-      "title": "Ezernams",
-      "location": {
-        "country": "Latvija",
-        "city": "Ķeipene"
+      "title": "Dallas Mavericks",
+      "RosterMvps": {
+        "starting": "Luka doncic",
+        "bench": "Nowitzki"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-37926580/original/eb219019-41e1-4d99-a499-994b082b887c.jpeg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-37926580/original/f323a639-bc6b-43fd-b479-668926601a68.jpeg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-37926580/original/62837d3d-cbe2-4036-97ee-18797dcef56b.jpeg?im_w=1440"
+      "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Dallas_Mavericks_logo.svg/800px-Dallas_Mavericks_logo.svg.png",
+      "https://cdn.vox-cdn.com/thumbor/A9qIxhZccar8I-MuzJdcZZn8AAA=/0x0:2317x1401/1200x800/filters:focal(970x731:1340x1101)/cdn.vox-cdn.com/uploads/chorus_image/image/71707446/City_Edition_Squad_2022_23.0.jpg",
+      "https://e0.365dm.com/21/06/2048x1152/skysports-nba-dirk-nowitzki_5419778.jpg"
       ],
-      "price": "94€",
-      "rating": 4.97
+      "titles": 2
     },
     {
       "id": "6",
-      "title": "Jaukus namelis miške",
-      "location": {
-        "country": "Latvija",
-        "city": "MALPILS NOVADS"
+      "title": "Denver Nuggets",
+      "RosterMvps": {
+        "starting": "Jokic",
+        "bench": "Murray"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-5723372/original/87eeb90f-2545-419e-b9a6-03c70db417e5.jpeg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/0573a97a-32be-429d-805c-768c39f76be6.jpg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/0b18e267-3109-4027-a60e-10816bf2fbc9.jpg?im_w=1440"
+        "https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Denver_Nuggets.svg/1200px-Denver_Nuggets.svg.png",
+        "https://nugglove.com/wp-content/uploads/getty-images/2018/08/1244161025.jpeg",
+        "https://www.denverpost.com/wp-content/uploads/2023/02/Hawks-Nuggets-Basketball.jpg?w=529"
       ],
-      "price": "135€",
-      "rating": 5.0
+      "titles": 1
     },
     {
       "id": "7",
-      "title": "Atostogų namai Elkos kalne",
-      "location": {
-        "country": "Latvija",
-        "city": "Skujene"
+      "title": "LA Clippers",
+      "RosterMvps": {
+        "starting": "George",
+        "bench": "Kawhi"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/c796ef33-b2c9-4a0a-8238-26617f3a9bdb.jpg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/bdf48b9a-6112-4c6d-a874-1514a79d3a60.jpg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-43620298/original/2f3f0463-9ef7-4ee7-a1f7-898ac3325d5e.jpeg?im_w=1440"
+        "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Los_Angeles_Clippers_%282015%29.svg/1200px-Los_Angeles_Clippers_%282015%29.svg.png",
+        "https://cdn.nba.com/teams/uploads/sites/1610612746/2023/02/MicrosoftTeams-image-5.jpg",
+        "https://library.sportingnews.com/styles/crop_style_16_9_mobile_2x/s3/2023-02/GettyImages-1230938953%20%281%29.jpg?itok=AL5F5Guo"
       ],
-      "price": "60€",
-      "rating": 4.98
+      "titles": 2
     },
     {
       "id": "8",
-      "title": "Sodyba BIČIULIŲ NAMAI",
-      "location": {
-        "country": "Lietuva",
-        "city": "Plateliai"
+      "title": "NY Knicks",
+      "RosterMvps": {
+        "starting": "Shumpert",
+        "bench": "Rose"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/7fb0c126-5c51-4d3e-b283-382fafe3329a.jpg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-44229733/original/4f172d56-b97e-4eab-ac26-23a2a3111c60.jpeg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-44229733/original/94042e24-8afa-45e9-8c87-7d9155244dfb.jpeg?im_w=1440"
+        "https://upload.wikimedia.org/wikipedia/en/thumb/2/25/New_York_Knicks_logo.svg/1200px-New_York_Knicks_logo.svg.png",
+        "https://images2.minutemediacdn.com/image/fetch/c_fill,g_auto,f_auto,h_2130,w_3200/http%3A%2F%2Fhoopshabit.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2018%2F08%2F1179394505.jpeg",
+        "https://s.yimg.com/ny/api/res/1.2/PghiZmEEvTj2vQbxQMbr6Q--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://s.yimg.com/os/creatr-uploaded-images/2023-01/00b525d0-9e99-11ed-9ffc-a850b1d3c7c6"
       ],
-      "price": "90€",
-      "rating": 5.0
+      "titles": 1
     },
     {
       "id": "9",
-      "title": "Unikalus poilsio namelis Elmau centre, 100 m nuo trobelės",
-      "location": {
-        "country": "Austrija",
-        "city": "Ellmau"
+      "title": "Houston Rockets",
+      "RosterMvps": {
+        "starting": "Westbrook",
+        "bench": "Yao"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/e8b6e3c2-df2e-4b9c-913c-c21c83b10426.jpg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/3dee0a89-0336-42a0-ac91-03d3861143fa.jpg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/27b7bb4e-fda9-4e5f-840a-04ffb0922993.jpg?im_w=1440"
+        "https://upload.wikimedia.org/wikipedia/lt/2/28/Houston_Rockets.svg",
+        "https://cdn.vox-cdn.com/thumbor/5P4Ms3hqcE06jNlZXFyh54s2AS0=/0x0:6000x3482/1200x800/filters:focal(2770x304:3730x1264)/cdn.vox-cdn.com/uploads/chorus_image/image/71939262/usa_today_19903182.0.jpg",
+        "https://media.lrytas.lt/images/2020/12/14/191736557-2be67528-691b-4979-9a77-7c894984ea47.jpg"
       ],
-      "price": "464€",
-      "rating": 5.0
+      "titles": 0
     },
     {
       "id": "10",
-      "title": "Gamtos rezidencija - Bondo slėnio gamtinis rezervatas",
-      "location": {
-        "country": "Italija",
-        "city": "Brescia"
+      "title": "Sacramenot Kings",
+      "RosterMvps": {
+        "starting": "Sabonis",
+        "bench": "Fox"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/e69b3403-3d09-4f3f-b997-1a21164d1ee7.jpg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/0abf4095-ef69-4afb-bef6-820e59d23990.jpg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/07b54251-f9b5-490e-8d0e-85afa65b161c.jpg?im_w=1440"
+        "https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/SacramentoKings.svg/640px-SacramentoKings.svg.png",
+        "https://sportsnaut.com/wp-content/uploads/2022/11/USATSI_19368986.jpg",
+        "https://cdn.vox-cdn.com/thumbor/MMJnBRWD7pgqfj9mZUXkgFqzxT0=/0x0:7522x5017/1200x800/filters:focal(2158x1985:3360x3187)/cdn.vox-cdn.com/uploads/chorus_image/image/70525598/usa_today_17507777.0.jpg"
       ],
-      "price": "144€",
-      "rating": 4.98
+      "titles": 0
     },
     {
       "id": "11",
-      "title": "Dangaus detalė, ramybė, gamta ir atsipalaidavimas",
-      "location": {
-        "country": "Rumunija",
-        "city": "Brașov County"
+      "title": "GS Warriors",
+      "RosterMvps": {
+        "starting": "Curry",
+        "bench": "Thompson"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/miso/Hosting-37805118/original/58212748-d05c-46c4-9c93-5194e4c6bfb4.jpeg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-37805118/original/05cf0d6f-4608-48c2-8ae0-3fb767ef7380.jpeg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/miso/Hosting-37805118/original/a9274c1e-7221-4747-9d26-81a490ebed92.jpeg?im_w=1440"
+        "https://imageio.forbes.com/i-forbesimg/media/lists/teams/golden-state-warriors_416x416.jpg?format=jpg",
+        "https://cdn.vox-cdn.com/thumbor/PhKHi04frrjb8JnmT_ghIDFtRFE=/0x0:5646x3764/1200x675/filters:focal(2372x1431:3274x2333)/cdn.vox-cdn.com/uploads/chorus_image/image/71941985/usa_today_19926783.0.jpg",
+        "https://img.olympicchannel.com/images/image/private/t_s_pog_staticContent_hero_md_2x/f_auto/primary/mpoctgornfa98ldc2wgy"
       ],
-      "price": "70€",
-      "rating": 4.95
+      "titles": 4
     },
     {
       "id": "12",
-      "title": "Alpių namelis su vaizdu į Aukštutinį Valė slėnį",
-      "location": {
-        "country": "Šveicarija",
-        "city": "Wallis"
+      "title": "Miami Heat",
+      "RosterMvps": {
+        "starting": "Butler",
+        "bench": "Herro"
       },
       "images": [
-        "https://a0.muscache.com/im/pictures/1c1f6334-dfca-4e34-a963-47ec1bbdcf74.jpg?im_w=1200",
-        "https://a0.muscache.com/im/pictures/1d593a62-5dc3-413b-b27d-45bd682b8efa.jpg?im_w=1440",
-        "https://a0.muscache.com/im/pictures/6d77e529-40b5-4dce-bfee-8fcf984bb895.jpg?im_w=1440"
+        "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/800px-Miami_Heat_logo.svg.png",
+        "https://cdn.vox-cdn.com/thumbor/QDeT0sK406XtmaHguqgebfPetvA=/0x0:2516x3347/1200x800/filters:focal(1219x419:1621x821)/cdn.vox-cdn.com/uploads/chorus_image/image/71935295/usa_today_17966799.0.jpg",
+        "https://images.spot.im/v1/production/ijbbfevjomkwx8pbe5le"
       ],
-      "price": "180€",
-      "rating": 4.96
+      "titles": 2
     }
   ]
 }

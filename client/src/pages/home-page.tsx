@@ -7,7 +7,7 @@ const HomePage = () => {
 
   React.useEffect(() => {
   (async () => {
-    const fetchedTeams = await ApiService.fetchNba();
+    const fetchedTeams = await ApiService.fetchTeams();
     setTeams(fetchedTeams);
   })();
   }, []);
