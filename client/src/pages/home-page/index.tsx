@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Container } from '@mui/material';
 import ApiService from 'services/api-service';
+import { TeamsGrid } from './styles';
 
 const HomePage = () => {
   const [teams, setTeams] = React.useState<TeamModel[]>([]);
@@ -14,7 +15,11 @@ const HomePage = () => {
   
   return (
   <Container sx={{ my: 6 }}>
-    <Box component="pre">{JSON.stringify(teams, null, 4)}</Box>
+    <Box sx={TeamsGrid}>
+      {
+        teams.map(( team) => (<Box>{team.title}</Box>))
+      }
+    </Box>
   </Container>
 );
   }
