@@ -1,4 +1,4 @@
-import {Theme} from "@mui/material";
+import {Theme, styled, Box} from "@mui/material";
 
 
 export const TeamsGrid = (theme: Theme) => ({
@@ -19,3 +19,16 @@ export const TeamsGrid = (theme: Theme) => ({
     gridTemplateColumns: 'repeat(4, 1fr)',
   },
 });
+
+export const titlesStyle =  {
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+  paddingTop: 3
+}
+
+export const titlesNumberStyle = styled(Box)(({theme}) => ({
+  fontSize: '1.5rem',
+  color: theme.palette.warning.main,
+  fontWeight: 500,
+}))

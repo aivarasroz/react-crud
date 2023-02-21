@@ -4,8 +4,8 @@
       "id": "1",
       "title": "Chicago Bulls",
       "RosterMvps": {
-        "starting": "DeRozan",
-        "bench": "ball"
+        "starting": "D. DeRozan",
+        "bench": "L. Ball"
       },
       "images": [
         "https://upload.wikimedia.org/wikipedia/en/thumb/6/67/Chicago_Bulls_logo.svg/1200px-Chicago_Bulls_logo.svg.png",
@@ -18,8 +18,8 @@
       "id": "2",
       "title": "Milwaukee Bucks",
       "RosterMvps": {
-        "starting": "Giannis",
-        "bench": "Middleton"
+        "starting": "G. Atentekoumpo",
+        "bench": "K. Middleton"
       },
       "images": [
         "https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Milwaukee_Bucks_logo.svg/1200px-Milwaukee_Bucks_logo.svg.png",
@@ -32,11 +32,11 @@
       "id": "3",
       "title": "LA Lakers",
       "RosterMvps": {
-        "starting": "LeBron",
-        "bench": "Davis"
+        "starting": "L. James",
+        "bench": "A. Davis"
       },
       "images": [
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Los_Angeles_Lakers_logo.svg/800px-Los_Angeles_Lakers_logo.svg.png",
+        "https://th.bing.com/th/id/OIP.ysL8Sx9pkaiYusyT6zzo0gHaFV?pid=ImgDet&rs=1",
         "https://cdn.nba.com/teams/uploads/sites/1610612747/2023/02/GettyImages-1461890853-02-02-23.jpg",
         "https://s7d2.scene7.com/is/image/TWCNews/2022-10-27-lakers-la_10272022"
       ],
@@ -46,8 +46,8 @@
       "id": "4",
       "title": "Brooklyn Nets",
       "RosterMvps": {
-        "starting": "Durant",
-        "bench": "Irving"
+        "starting": "K. Durant",
+        "bench": "K. Irving"
       },
       "images": [
        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/1200px-Brooklyn_Nets_newlogo.svg.png",
@@ -60,8 +60,8 @@
       "id": "5",
       "title": "Dallas Mavericks",
       "RosterMvps": {
-        "starting": "Luka doncic",
-        "bench": "Nowitzki"
+        "starting": "L. Doncic",
+        "bench": "D. Nowitzki"
       },
       "images": [
       "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Dallas_Mavericks_logo.svg/800px-Dallas_Mavericks_logo.svg.png",
@@ -74,8 +74,8 @@
       "id": "6",
       "title": "Denver Nuggets",
       "RosterMvps": {
-        "starting": "Jokic",
-        "bench": "Murray"
+        "starting": "N. Jokic",
+        "bench": "J. Murray"
       },
       "images": [
         "https://upload.wikimedia.org/wikipedia/en/thumb/7/76/Denver_Nuggets.svg/1200px-Denver_Nuggets.svg.png",
@@ -88,8 +88,8 @@
       "id": "7",
       "title": "LA Clippers",
       "RosterMvps": {
-        "starting": "George",
-        "bench": "Kawhi"
+        "starting": "P. George",
+        "bench": "K. Leonard"
       },
       "images": [
         "https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/Los_Angeles_Clippers_%282015%29.svg/1200px-Los_Angeles_Clippers_%282015%29.svg.png",
@@ -102,8 +102,8 @@
       "id": "8",
       "title": "NY Knicks",
       "RosterMvps": {
-        "starting": "Shumpert",
-        "bench": "Rose"
+        "starting": "I. Shumpert",
+        "bench": "D. Rose"
       },
       "images": [
         "https://upload.wikimedia.org/wikipedia/en/thumb/2/25/New_York_Knicks_logo.svg/1200px-New_York_Knicks_logo.svg.png",
@@ -116,8 +116,8 @@
       "id": "9",
       "title": "Houston Rockets",
       "RosterMvps": {
-        "starting": "Westbrook",
-        "bench": "Yao"
+        "starting": "R. Westbrook",
+        "bench": "Y. Ming"
       },
       "images": [
         "https://upload.wikimedia.org/wikipedia/lt/2/28/Houston_Rockets.svg",
@@ -130,8 +130,8 @@
       "id": "10",
       "title": "Sacramenot Kings",
       "RosterMvps": {
-        "starting": "Sabonis",
-        "bench": "Fox"
+        "starting": "D. Sabonis",
+        "bench": "D. Fox"
       },
       "images": [
         "https://upload.wikimedia.org/wikipedia/en/thumb/c/c7/SacramentoKings.svg/640px-SacramentoKings.svg.png",
@@ -144,8 +144,8 @@
       "id": "11",
       "title": "GS Warriors",
       "RosterMvps": {
-        "starting": "Curry",
-        "bench": "Thompson"
+        "starting": "S. Curry",
+        "bench": "K. Thompson"
       },
       "images": [
         "https://imageio.forbes.com/i-forbesimg/media/lists/teams/golden-state-warriors_416x416.jpg?format=jpg",
@@ -158,8 +158,8 @@
       "id": "12",
       "title": "Miami Heat",
       "RosterMvps": {
-        "starting": "Butler",
-        "bench": "Herro"
+        "starting": "J. Butler",
+        "bench": "T. Herro"
       },
       "images": [
         "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Miami_Heat_logo.svg/800px-Miami_Heat_logo.svg.png",
