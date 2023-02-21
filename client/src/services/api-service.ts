@@ -16,8 +16,15 @@ const fetchTeams = async () => {
   return response.data
 };
 
+const fetchTeam = async (id: string | number) => {
+  const response = await api.get<TeamModel>(`/Teams/${id}`);
+
+  return response.data;
+};
+
 const ApiService = {
   fetchTeams,
+  fetchTeam,
 
 };
 
