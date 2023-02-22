@@ -11,8 +11,8 @@ import { Navigation } from "swiper";
 import { SwiperStyle } from "./styles";
 
 const StyledSwiper = styled(Swiper)({
-  width: '60%',
-  height: '60%',
+  width: '80%',
+  height: '50%',
   margin: 'auto'
 })
 

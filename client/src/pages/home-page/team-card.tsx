@@ -29,14 +29,14 @@ const TeamCard: React.FC<TeamCardProps> = ({
           <Typography sx={{ fontSize: '1.5rem', fontWeight: 600}}>Titles Won</Typography>
           <Styled.titlesNumberStyle>{titles}"</Styled.titlesNumberStyle>
         </Box>
-        <Typography variant='h6' color='primary'>Roster MVP's:</Typography>
+        <Typography variant='h6' color='second'>Roster MVP's:</Typography>
         <Box sx={titlesStyle}>
         <Typography sx={{ fontSize: 14, fontWeight: 600 }} color='success.main'>{RosterMvps.starting}</Typography>
         <Typography sx={{ fontSize: 14, fontWeight: 600 }} color='success.main'>{RosterMvps.bench}</Typography>
         </Box>
       </Box>
       <Button
-       color='primary'
+       color='secondary'
        variant="contained" 
        sx={{ mt: 3}}
        onClick={() => navigate(routes.EachTeamPage.createLink(id))}>HighLights</Button>

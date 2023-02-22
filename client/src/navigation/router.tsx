@@ -4,6 +4,7 @@ import NavbarLayout from 'components/layouts/navbar-layout';
 import HomePage from 'pages/home-page';
 import routes from './routes';
 import EachTeamPage from 'pages/each-team-page/index';
+import TeamFormPage from 'pages/team-form-page';
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
       {
         path: routes.HomePage,
         element: <HomePage />,
+      },
+      {
+        path: routes.TeamFormPage,
+        element: <TeamFormPage />,
       },
       {
         path: routes.EachTeamPage.path,

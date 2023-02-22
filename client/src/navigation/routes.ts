@@ -3,6 +3,7 @@ const EachTeamPageRoot = '/team/'
 
 const routes = {
   HomePage: '/',
+  TeamFormPage: '/add-team',
   EachTeamPage: {
     path: '/team/:id',
     createLink: (id: string | number) => `${EachTeamPageRoot}${id}`
