@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { getTeamFormValues } from 'pages/team-form-page/helpers';
 
 const api = axios.create({
   baseURL: 'http://localhost:5024',
@@ -13,8 +12,8 @@ const api = axios.create({
 
 type CreateTeamRequest = Omit<TeamModel, "id">;
 
-const createTeam = async (getTeamFormValues: CreateTeamRequest) => {
-  const response = await api.post<TeamModel>('/Teams', getTeamFormValues);
+const createTeam = async (teamdata: CreateTeamRequest) => {
+  const response = await api.post<TeamModel>('/Teams', teamdata);
 
   return response.data;
 };
