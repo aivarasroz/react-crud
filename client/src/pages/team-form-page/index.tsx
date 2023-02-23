@@ -1,23 +1,51 @@
 import React from 'react';
 import { Box, Typography, Paper, TextField, Button} from '@mui/material'
 import { Stack } from '@mui/material';
-import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
 import RosterField from './roster-field';
 import ImageField from './image-field';
 import TitlesField from './titles-field';
+import MilitaryTechIcon from '@mui/icons-material/MilitaryTech'
+import { getTeamFormValues } from './helpers';
 
-const TeamFormPage = () =>  (
+
+
+const TeamFormPage = () =>  {
+
+  const formRef = React.useRef<undefined | HTMLFormElement>(undefined);
+  
+  
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    
+
+    try {
+      const values = getTeamFormValues(formRef.current);
+      console.log('Vykdomas sukūrimas');
+      console.log(values);
+    } catch (error) {
+      if (error instanceof Error) {
+        alert(error.message);
+      } else {
+        alert('Error on form submit. Contact system administrator.');
+      }
+    }
+  };
+
+  
+  
+  return (
     <Stack sx={{
       py: { xs: 2, md: 4, lg: 6},
       px: 2,
       alignItems: 'center'
     }}>
-      <Paper 
-      component='form' 
-      elevation={6} 
-      sx={{p: 3,
-       width: (theme) => ({  xs: 1, sm: theme.breakpoints.values.sm})}}
-       >
+      <Paper elevation={6} >
+        <Stack
+        component='form'
+        onSubmit={handleSubmit}
+        ref={formRef}
+        sx={{p: 3,
+          width: (theme: { breakpoints: { values: { sm: any; }; }; }) => ({  xs: 1, sm: theme.breakpoints.values.sm})}} >
         <Typography 
           color= 'primary' 
           sx={{ 
@@ -28,7 +56,8 @@ const TeamFormPage = () =>  (
             Add new team
             </Typography>
         <TextField
-          size='small' 
+          size='small'
+          name='team' 
           label='Team Name' 
           fullWidth 
           sx={{ alignContent: 'center'}}
@@ -48,11 +77,20 @@ const TeamFormPage = () =>  (
             variant='contained' 
             color='primary' 
             size='large' 
-            fullWidth sx={{mt: 2}}>Add New Team</Button>
+            fullWidth sx={{mt: 2}}
+            type='submit'
+            >
+              Add New Team</Button>
         </Box>
+      </Stack>
       </Paper>
     </Stack>
   );
+}
+  
+  
+  export default TeamFormPage
 
-
-export default TeamFormPage
+function getHouseFormValues(current: HTMLFormElement | undefined) {
+  throw new Error('Function not implemented.');
+}

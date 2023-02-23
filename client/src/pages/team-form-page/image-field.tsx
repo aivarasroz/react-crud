@@ -9,7 +9,6 @@ import React from 'react';
 import createId from 'uniqid'
 import DeleteIcon from '@mui/icons-material/Delete';
 import AddBoxIcon from '@mui/icons-material/AddBox';
-import { useState } from 'react';
 
 
 
@@ -19,12 +18,14 @@ const initalIds = [createId()];
 const ImageField = () => {
 
   const [imgFields, setImgFields] = React.useState<string[]>(initalIds);
+
   const addImgField = () => setImgFields([...imgFields, createId()]);
+
   const delImgField = (id: string) => {
     if(imgFields.length > 1){
       setImgFields(imgFields.filter((imgId) => imgId !== id));
     }
-  }
+  };
   
   return (
     <Box sx={{width: 1}}>
@@ -39,6 +40,7 @@ const ImageField = () => {
               <TextField
               key={id}
               label='New image'
+              name='image'
               fullWidth
               variant='filled'
               size='small'
