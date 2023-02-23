@@ -10,7 +10,10 @@ import ApiService from 'services/api-service';
 import { useNavigate } from 'react-router-dom';
 
 
+
 const TeamFormPage = () =>  {
+
+  const navigate = useNavigate();
 
   const formRef = React.useRef<undefined | HTMLFormElement>(undefined);
   
@@ -19,7 +22,6 @@ const TeamFormPage = () =>  {
     event.preventDefault();
   
     try {
-      const navigate = useNavigate();
       const values = getTeamFormValues(formRef.current);
       console.log('Adding new Team...');
       console.log(values);
