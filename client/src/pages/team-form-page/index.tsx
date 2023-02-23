@@ -7,15 +7,18 @@ import TitlesField from './titles-field';
 import MilitaryTechIcon from '@mui/icons-material/MilitaryTech'
 import { getTeamFormValues } from './helpers';
 import ApiService from 'services/api-service';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
 
 
 const TeamFormPage = () =>  {
 
+  const { id } = useParams();
+
   const navigate = useNavigate();
 
   const formRef = React.useRef<undefined | HTMLFormElement>(undefined);
+  const [team, setTeam] = React.useState<undefined | TeamModel>(undefined);
   
   
   const handleSubmit = async (event: React.FormEvent) => {
@@ -39,6 +42,17 @@ const TeamFormPage = () =>  {
     }
   };
 
+  React.useEffect(() => {
+    if (id !== undefined) {
+      (async () => {
+        const fetchedTeam = await ApiService.fetchTeam(id);
+        setTeam(fetchedTeam);
+      })();
+   
+    }
+
+  }, []);
+
   return (
     <Stack sx={{
       py: { xs: 2, md: 4, lg: 6},
@@ -53,7 +67,8 @@ const TeamFormPage = () =>  {
         sx={{p: 3,
           width: (theme: { breakpoints: { values: { sm: any; }; }; }) => ({  xs: 1, sm: theme.breakpoints.values.sm})}} >
         <Typography 
-          color= 'primary' 
+          color= 'primary'
+           
           sx={{ 
             textAlign: 'center', 
             fontSize: 23, pb: 2, 

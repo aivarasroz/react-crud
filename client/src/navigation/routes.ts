@@ -1,16 +1,28 @@
-const EachTeamPageRoot = '/team/'
+const EachTeamPageRoot = '/Team/';
+const updateTeamPageRoot = '/update-team/';
 
-
-const routes = {
+const staticRoutes = {
   HomePage: '/',
-  TeamFormPage: '/add-team',
+  TeamFormPage: '/create-team',
+} as const;
+
+const dynamicRoutes = {
   EachTeamPage: {
-    path: '/team/:id',
-    createLink: (id: string | number) => `${EachTeamPageRoot}${id}`
+    path: `${EachTeamPageRoot}:id`,
+    createLink: (id: string | number) => `${EachTeamPageRoot}${id}`,
+  },
+  UpdateTeamPage: {
+    path: `${updateTeamPageRoot}:id`,
+    createLink: (id: string | number) => `${updateTeamPageRoot}${id}`,
   },
 } as const;
 
-export type Routes = typeof routes;
+const routes = {
+  ...staticRoutes,
+  ...dynamicRoutes,
+} as const;
+
+export type Routes = typeof staticRoutes;
 export type RouteLink = Routes[keyof Routes];
 
 export default routes;

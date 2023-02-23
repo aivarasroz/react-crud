@@ -23,6 +23,10 @@ const router = createBrowserRouter([
         path: routes.EachTeamPage.path,
         element: <EachTeamPage />,
       },
+      {
+        path: routes.UpdateTeamPage.path,
+        element: <TeamFormPage />,
+      },
     ],
   },
 ]);

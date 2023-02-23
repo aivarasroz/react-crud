@@ -20,8 +20,7 @@ const HomePage = () => {
   }, []);
   
   return (
-  <Container sx={{ my: 6 }}>
-    <Box display= 'flex' alignItems= 'center' justifyContent= 'center'>
+  <Container sx={{ my: 2 }}>
       <Button variant='contained'
        sx={{display: 'flex',
        alignItems: 'center',
@@ -32,7 +31,6 @@ const HomePage = () => {
         Add new Team
         <AddCircleOutlineIcon />
       </Button>
-    </Box>
     <Box sx={TeamsGrid}>
       {
         teams.map(( teamProps) => (<TeamCard key={teamProps.id} {...teamProps}></TeamCard>))

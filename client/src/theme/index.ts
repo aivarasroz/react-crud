@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material';
-import { teal, yellow } from '@mui/material/colors';
+import { purple, teal, yellow } from '@mui/material/colors';
 
 const theme = createTheme({
   zIndex: {
@@ -7,7 +7,7 @@ const theme = createTheme({
   },
   palette: {
     primary: teal,
-    secondary: yellow,
+    secondary: purple,
   },
 },
 );
