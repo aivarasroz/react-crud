@@ -50,9 +50,9 @@
         "bench": "K. Irving"
       },
       "images": [
-       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/1200px-Brooklyn_Nets_newlogo.svg.png",
-       "https://i.guim.co.uk/img/media/033ce0beb6cb5135cdf2c3fa1c7b56f0ecbf8df6/0_282_4493_2698/master/4493.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=97ce02135eb128f16053460b0498e287",
-       "https://imageio.forbes.com/specials-images/imageserve/63bb134c006dd2113dc4756b/Nets-Bulls-Basketball/960x0.jpg?format=jpg&width=960"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Brooklyn_Nets_newlogo.svg/1200px-Brooklyn_Nets_newlogo.svg.png",
+        "https://i.guim.co.uk/img/media/033ce0beb6cb5135cdf2c3fa1c7b56f0ecbf8df6/0_282_4493_2698/master/4493.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=97ce02135eb128f16053460b0498e287",
+        "https://imageio.forbes.com/specials-images/imageserve/63bb134c006dd2113dc4756b/Nets-Bulls-Basketball/960x0.jpg?format=jpg&width=960"
       ],
       "titles": 0
     },
@@ -64,9 +64,9 @@
         "bench": "D. Nowitzki"
       },
       "images": [
-      "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Dallas_Mavericks_logo.svg/800px-Dallas_Mavericks_logo.svg.png",
-      "https://cdn.vox-cdn.com/thumbor/A9qIxhZccar8I-MuzJdcZZn8AAA=/0x0:2317x1401/1200x800/filters:focal(970x731:1340x1101)/cdn.vox-cdn.com/uploads/chorus_image/image/71707446/City_Edition_Squad_2022_23.0.jpg",
-      "https://e0.365dm.com/21/06/2048x1152/skysports-nba-dirk-nowitzki_5419778.jpg"
+        "https://upload.wikimedia.org/wikipedia/en/thumb/9/97/Dallas_Mavericks_logo.svg/800px-Dallas_Mavericks_logo.svg.png",
+        "https://cdn.vox-cdn.com/thumbor/A9qIxhZccar8I-MuzJdcZZn8AAA=/0x0:2317x1401/1200x800/filters:focal(970x731:1340x1101)/cdn.vox-cdn.com/uploads/chorus_image/image/71707446/City_Edition_Squad_2022_23.0.jpg",
+        "https://e0.365dm.com/21/06/2048x1152/skysports-nba-dirk-nowitzki_5419778.jpg"
       ],
       "titles": 2
     },
@@ -167,6 +167,38 @@
         "https://images.spot.im/v1/production/ijbbfevjomkwx8pbe5le"
       ],
       "titles": 2
+    },
+    {
+      "title": "zXZX",
+      "RosterMvps": {
+        "starting": "vsdvsdv",
+        "bench": "dscsDC"
+      },
+      "titles": 4,
+      "images": [],
+      "id": "Fiey4RX"
+    },
+    {
+      "title": "Detroit Pistons",
+      "RosterMvps": {
+        "starting": "C.Billups",
+        "bench": "B.Wallace"
+      },
+      "titles": 2,
+      "images": [],
+      "id": "c-eFiE9"
+    },
+    {
+      "title": "Detroit Pistons ",
+      "RosterMvps": {
+        "starting": "Billups",
+        "bench": "Wallace"
+      },
+      "titles": 2,
+      "images": [
+        "https://images2.alphacoders.com/192/192330.jpg"
+      ],
+      "id": "NnCj0lp"
     }
   ]
 }

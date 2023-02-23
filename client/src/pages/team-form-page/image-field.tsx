@@ -11,8 +11,6 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import AddBoxIcon from '@mui/icons-material/AddBox';
 
 
-
-
 const initalIds = [createId()];
 
 const ImageField = () => {
@@ -40,7 +38,7 @@ const ImageField = () => {
               <TextField
               key={id}
               label='New image'
-              name='image'
+              name='images'
               fullWidth
               variant='filled'
               size='small'

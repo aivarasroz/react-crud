@@ -6,7 +6,8 @@ import ImageField from './image-field';
 import TitlesField from './titles-field';
 import MilitaryTechIcon from '@mui/icons-material/MilitaryTech'
 import { getTeamFormValues } from './helpers';
-
+import ApiService from 'services/api-service';
+import { useNavigate } from 'react-router-dom';
 
 
 const TeamFormPage = () =>  {
@@ -14,14 +15,19 @@ const TeamFormPage = () =>  {
   const formRef = React.useRef<undefined | HTMLFormElement>(undefined);
   
   
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    
-
+  
     try {
+      const navigate = useNavigate();
       const values = getTeamFormValues(formRef.current);
-      console.log('Vykdomas sukūrimas');
+      console.log('Adding new Team...');
       console.log(values);
+  
+      await ApiService.createTeam(values);
+      console.log('Team created successfully!');
+  
+      navigate('/');
     } catch (error) {
       if (error instanceof Error) {
         alert(error.message);
@@ -31,8 +37,6 @@ const TeamFormPage = () =>  {
     }
   };
 
-  
-  
   return (
     <Stack sx={{
       py: { xs: 2, md: 4, lg: 6},
