@@ -1,8 +1,7 @@
 import React from 'react';
 import { Box, Typography, Paper, TextField, Button} from '@mui/material'
-import { Stack, Rating } from '@mui/material';
+import { Stack } from '@mui/material';
 import MilitaryTechIcon from '@mui/icons-material/MilitaryTech';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import RosterField from './roster-field';
 import ImageField from './image-field';
 import TitlesField from './titles-field';
