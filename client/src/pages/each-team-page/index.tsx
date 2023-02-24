@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import { useParams, useNavigate, Navigate } from 'react-router-dom'
 import ApiService from 'services/api-service';
 import routes from 'navigation/routes';
-import { Box, styled } from '@mui/material';
+import { Box, styled, Typography } from '@mui/material';
 import { Swiper, SwiperSlide} from 'swiper/react'
 import 'swiper/css'
 import Img from 'components/ui/img';
@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { SwiperStyle } from "./styles";
 import useTeam from "hooks/use-team";
+import TeamPageCard from "./team-page-card";
 
 const StyledSwiper = styled(Swiper)({
   width: '80%',
@@ -19,7 +20,7 @@ const StyledSwiper = styled(Swiper)({
 
 const EachTeamPage = () => {
   const { id } = useParams();
-  const [team, teamIsLoading] = useTeam(id);
+  const [team] = useTeam(id);
 
  
 
@@ -29,7 +30,7 @@ const EachTeamPage = () => {
 
   return (
   <Box component="pre">
-    {JSON.stringify(team, null, 4)}
+     <TeamPageCard {...team} />
       <StyledSwiper
       sx={SwiperStyle}
       navigation={true}
