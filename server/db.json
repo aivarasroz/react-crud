@@ -2,17 +2,16 @@
   "Teams": [
     {
       "id": "1",
-      "title": "Chicago Bulls",
+      "title": "Chicago Bullseye",
       "RosterMvps": {
-        "starting": "D. DeRozan",
-        "bench": "L. Ball"
+        "starting": "D. DeRozanas",
+        "bench": "L. Ballas"
       },
       "images": [
         "https://i.ytimg.com/vi/h6xXNwnnOow/maxresdefault.jpg",
-        "https://lh3.googleusercontent.com/9-ToKlf7j2LxD79jbLpaoNViZZZdih4IFwcDCUKm9A4H9ZFecIs5RzxPWYDMmdWIZOKnWy0m7iVcJg=w1440-ns-nd-rj",
-        "https://cdn.vox-cdn.com/thumbor/JaJOGhUuJ9egSQsaad5B563xfOk=/0x0:3000x2000/1200x800/filters:focal(1260x760:1740x1240)/cdn.vox-cdn.com/uploads/chorus_image/image/65356129/tyler_parker_5_guys_bulls_alyceatinoyan.0.jpg"
+        "https://lh3.googleusercontent.com/9-ToKlf7j2LxD79jbLpaoNViZZZdih4IFwcDCUKm9A4H9ZFecIs5RzxPWYDMmdWIZOKnWy0m7iVcJg=w1440-ns-nd-rj"
       ],
-      "titles": 6
+      "titles": 2
     },
     {
       "id": "2",
@@ -169,26 +168,6 @@
       "titles": 2
     },
     {
-      "title": "zXZX",
-      "RosterMvps": {
-        "starting": "vsdvsdv",
-        "bench": "dscsDC"
-      },
-      "titles": 4,
-      "images": [],
-      "id": "Fiey4RX"
-    },
-    {
-      "title": "Detroit Pistons",
-      "RosterMvps": {
-        "starting": "C.Billups",
-        "bench": "B.Wallace"
-      },
-      "titles": 2,
-      "images": [],
-      "id": "c-eFiE9"
-    },
-    {
       "title": "Detroit Pistons ",
       "RosterMvps": {
         "starting": "Billups",
@@ -199,18 +178,6 @@
         "https://images2.alphacoders.com/192/192330.jpg"
       ],
       "id": "NnCj0lp"
-    },
-    {
-      "title": "efsd",
-      "RosterMvps": {
-        "starting": "asdf",
-        "bench": "safd"
-      },
-      "titles": 3,
-      "images": [
-        "sadf"
-      ],
-      "id": "nT5wRze"
     }
   ]
 }

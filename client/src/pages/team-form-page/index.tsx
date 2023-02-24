@@ -19,12 +19,13 @@ const TeamFormPage = () =>  {
   const navigate = useNavigate();
   const formRef = React.useRef<undefined | HTMLFormElement>(undefined);
   const [team, loadingTeamData] = useTeam(id);
+  const mode = id !== undefined ? 'edit' : 'create';
   const {
     title,
     btnText,
     color,
     colorMain
-  } = getData(id !== undefined ? 'edit' : 'create');
+  } = getData(mode);
   
   
   const handleSubmit = async (event: React.FormEvent) => {
@@ -32,11 +33,13 @@ const TeamFormPage = () =>  {
   
     try {
       const values = getTeamFormValues(formRef.current);
-  
-      await ApiService.createTeam(values);
-      console.log('Team created successfully!');
-  
-      navigate(routes.HomePage);
+      if (mode === 'create') {
+        await ApiService.createTeam(values);
+        navigate(routes.HomePage);
+      } else {
+        await ApiService.updateTeam(id as any, values);
+        navigate(routes.HomePage);
+      }
     } catch (error) {
       if (error instanceof Error) {
         alert(error.message);

@@ -10,7 +10,9 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 
 
-type TeamCardProps = TeamModel;
+type TeamCardProps = TeamModel & {
+  onDelete: VoidFunction
+}
 
 const TeamCard: React.FC<TeamCardProps> = ({
   id,
@@ -18,6 +20,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
   RosterMvps,
   images,
   titles,
+  onDelete
 }) => {
   const navigate= useNavigate();
   
@@ -52,6 +55,7 @@ const TeamCard: React.FC<TeamCardProps> = ({
           color="error"
           size="small"
           fullWidth
+          onClick={onDelete}
         >    <DeleteIcon />
         </Button>
     </Styled.ActionButtons>

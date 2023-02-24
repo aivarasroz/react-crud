@@ -12,6 +12,12 @@ const HomePage = () => {
   const [teams, setTeams] = React.useState<TeamModel[]>([]);
   const navigate = useNavigate();
 
+  const onDelete = async (id: string) => {
+    await ApiService.deleteTeam(id);
+    const fetchedTeams = await ApiService.fetchTeams();
+    setTeams(fetchedTeams);
+  };
+
   React.useEffect(() => {
   (async () => {
     const fetchedTeams = await ApiService.fetchTeams();
@@ -33,7 +39,7 @@ const HomePage = () => {
       </Button>
     <Box sx={TeamsGrid}>
       {
-        teams.map(( teamProps) => (<TeamCard key={teamProps.id} {...teamProps}></TeamCard>))
+        teams.map(( teamProps) => (<TeamCard onDelete={() => onDelete(teamProps.id)} key={teamProps.id} {...teamProps}></TeamCard>))
       }
     </Box>
   </Container>
