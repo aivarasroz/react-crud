@@ -16,12 +16,12 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: routes.TeamFormPage,
-        element: <TeamFormPage />,
-      },
-      {
         path: routes.EachTeamPage.path,
         element: <EachTeamPage />,
+      },
+      {
+        path: routes.TeamFormPage,
+        element: <TeamFormPage />,
       },
       {
         path: routes.UpdateTeamPage.path,

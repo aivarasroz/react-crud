@@ -8,17 +8,23 @@ import MilitaryTechIcon from '@mui/icons-material/MilitaryTech'
 import { getTeamFormValues } from './helpers';
 import ApiService from 'services/api-service';
 import { useNavigate, useParams } from 'react-router-dom';
+import useTeam from 'hooks/use-team';
+import routes from 'navigation/routes';
+import { getData } from './data';
 
 
 
 const TeamFormPage = () =>  {
-
   const { id } = useParams();
-
   const navigate = useNavigate();
-
   const formRef = React.useRef<undefined | HTMLFormElement>(undefined);
-  const [team, setTeam] = React.useState<undefined | TeamModel>(undefined);
+  const [team, loadingTeamData] = useTeam(id);
+  const {
+    title,
+    btnText,
+    color,
+    colorMain
+  } = getData(id !== undefined ? 'edit' : 'create');
   
   
   const handleSubmit = async (event: React.FormEvent) => {
@@ -26,13 +32,11 @@ const TeamFormPage = () =>  {
   
     try {
       const values = getTeamFormValues(formRef.current);
-      console.log('Adding new Team...');
-      console.log(values);
   
       await ApiService.createTeam(values);
       console.log('Team created successfully!');
   
-      navigate('/');
+      navigate(routes.HomePage);
     } catch (error) {
       if (error instanceof Error) {
         alert(error.message);
@@ -42,16 +46,11 @@ const TeamFormPage = () =>  {
     }
   };
 
-  React.useEffect(() => {
-    if (id !== undefined) {
-      (async () => {
-        const fetchedTeam = await ApiService.fetchTeam(id);
-        setTeam(fetchedTeam);
-      })();
-   
-    }
+  if (loadingTeamData) return null;
 
-  }, []);
+  console.log('Adding new Team...');
+  console.log(team);
+
 
   return (
     <Stack sx={{
@@ -67,41 +66,47 @@ const TeamFormPage = () =>  {
         sx={{p: 3,
           width: (theme: { breakpoints: { values: { sm: any; }; }; }) => ({  xs: 1, sm: theme.breakpoints.values.sm})}} >
         <Typography 
-          color= 'primary'
-           
+        color={colorMain}
           sx={{ 
             textAlign: 'center', 
             fontSize: 23, pb: 2, 
             fontWeight: 500}}
             >
-            Add new team
+            {title}
             </Typography>
         <TextField
           size='small'
           name='team' 
           label='Team Name' 
-          fullWidth 
+          fullWidth
+          defaultValue={team?.title} 
           sx={{ alignContent: 'center'}}
           >
           </TextField>
         <Box>
           <Typography  
-            color='primary' 
+            color={color}
             sx={{
               p: 2, 
               display: 'flex', 
-              alignItems: 'center'}}><MilitaryTechIcon color='warning' fontSize='large' />Roster MVP's </Typography>
-          <RosterField />
-          <ImageField />
-          <TitlesField />
+              alignItems: 'center'}}><MilitaryTechIcon color={color} fontSize='large' />Roster MVP's </Typography>
+          <RosterField defaultBench={team?.RosterMvps.bench} defaultStarting={team?.RosterMvps.starting} />
+          <ImageField 
+          colorMain={colorMain}
+          color={color}
+          defaultImages={team?.images} />
+          <TitlesField
+             colorMain={colorMain}
+             defaultValue={team?.titles} />
           <Button 
-            variant='contained' 
-            color='primary' 
+            color={color}
+            variant='contained'  
             size='large' 
-            fullWidth sx={{mt: 2}}
+            fullWidth sx={{
+              mt: 2}}
             type='submit'
             >
-              Add New Team</Button>
+              {btnText}</Button>
         </Box>
       </Stack>
       </Paper>

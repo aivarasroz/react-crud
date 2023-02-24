@@ -9,6 +9,7 @@ import Img from 'components/ui/img';
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import { SwiperStyle } from "./styles";
+import useTeam from "hooks/use-team";
 
 const StyledSwiper = styled(Swiper)({
   width: '80%',
@@ -18,18 +19,9 @@ const StyledSwiper = styled(Swiper)({
 
 const EachTeamPage = () => {
   const { id } = useParams();
-  const [team, setTeam] = React.useState<undefined | TeamModel>(undefined);
+  const [team, teamIsLoading] = useTeam(id);
 
-  React.useEffect(() => {
-    if (id !== undefined) {
-      (async () => {
-        const fetchedTeam = await ApiService.fetchTeam(id);
-        setTeam(fetchedTeam);
-      })();
-   
-    }
-
-  }, []);
+ 
 
   if (id === undefined) return <Navigate to={routes.HomePage}/>;
   if (team === undefined) return null
